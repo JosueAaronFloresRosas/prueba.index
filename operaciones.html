@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .numero1{
+            background-color: aquamarine;
+            border-radius: 15px;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px 3px  black inset;
+            height: 35px;
+            width: 130px;
+            padding: 16px;
+            color: aquamarine;
+            text-shadow: 
+            -1px -1px 0 black,
+            -1px -1px 0 black,
+            -1px -1px 0 black,
+            -1px -1px 0 black;
+            
+        }
+        .numero2{
+            background-color: aquamarine;
+            border-radius: 15px;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px 3px  black inset;
+            height: 35px;
+            width: 355px;
+            padding: 16px;
+            color: aquamarine;
+            text-shadow: 
+            -1px -1px 0 black,
+            -1px -1px 0 black,
+            -1px -1px 0 black,
+            -1px -1px 0 black;
+        }
+
+        .numero1:hover{
+            background-color: blue;
+            color: yellow;
+            box-shadow: 0px 0px 5px 3px  white inset;
+        }
+
+        .numero2:hover{
+            background-color: blue;
+            color: yellow;
+            box-shadow: 0px 0px 5px 3px  white inset;
+        }
+
+        p{
+            font-size: 20px;
+            border: 1px solid rgb(255, 255, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 10px;
+            padding: 15px;
+            height: 20px;
+            width: 470px;
+            background-color: aquamarine;
+            color: aquamarine;
+            box-shadow: 0px 0px 5px 3px black inset;
+            text-shadow: 
+            -1px -1px 0 black,
+            -1px -1px 0 black,
+            -1px -1px 0 black,
+            -1px -1px 0 black;
+        }
+
+        p:hover{
+            background-color: blue;
+            color: yellow;
+            box-shadow: 0px 0px 5px 3px  white inset;
+        }
+        .num1{
+            color: white;
+            border-radius: 5px;
+            border: 2px solid white;
+            background-color: black;
+        }
+
+         .num1:hover{
+            color: red;
+            border: 2px solid yellow;
+            background-color: yellow;
+            box-shadow: 0px 0px 3px 1px  white;
+        }
+
+        i{
+            border: 2px solid white;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+        }
+
+        i:hover{
+            color: yellow;
+            box-shadow: 0px 0px 3px 1px  red;
+        }
+
+        script{
+            border-radius: 20px;
+        }
+
+        .josue{
+            border-radius: 5px;
+            background-color: black;
+            color: red;
+            border: 1px solid white;
+            box-shadow: 0px 0px 3px 1px white inset;
+        }
+
+        .josue:hover{
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            box-shadow: 0px 0px 3px 1px black inset;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="numero1">Welcome</h1>
+
+    <h1 class="numero2">Sum of Whole Numbers</h1>
+
+    <p>Enter three integer amounts in each of the text boxes</p>
+    <form> 
+        <input class="num1" type="text" name="num1" id="num1" placeholder="Write a number"> <i>+</i> <input class="num1" type="text" name="num2" id="num2" placeholder="Write a number"> <i>+</i> <input class="num1" type="text" name="num3" id="num3" placeholder="Write a number">
+        <input class="josue" type="button" value="Add" onclick="suma()">
+        <input class="josue" type="button" value="Subtract" onclick="resta()">
+        <input class="josue" type="button" value="Multiply" onclick="multiplicacion()">
+        <input class="josue" type="button" value="Divide" onclick="division()">
+        <input class="josue" type="reset" value="borrar">
+    </form>
+
+    <script>
+        function suma() {
+            resultado = parseInt(num1.value) + parseInt(num2.value) + parseInt(num3.value);
+            alert("El resultado de la suma es:" + resultado);
+            
+        }
+    </script>
+    <script>
+        function resta() {
+            resultado = parseInt(num1.value) - parseInt(num2.value) - parseInt(num3.value);
+            alert("El resultado de la resta es:" + resultado);
+            
+        }
+
+    </script>
+    <script>
+        function multiplicacion() {
+            resultado = parseInt(num1.value) * parseInt(num2.value) * parseInt(num3.value);
+            alert("El resultado de la multiplicacion es:" + resultado);
+            
+        }
+
+    </script>
+    <script>
+        function division() {
+            resultado = parseInt(num1.value) / parseInt(num2.value) / parseInt(num3.value);
+            alert("El resultado de la division es:" + resultado);
+            
+        }
+
+    </script>
+    
+</body>
+</html>
